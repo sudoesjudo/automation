@@ -1,0 +1,38 @@
+name: Update Visits
+
+on:
+  schedule:
+    - cron: '*/15 * * * *' # Runs every 15 minutes
+
+jobs:
+  update-visits:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Increment visit counter
+        id: increment
+        run: |
+          if [ ! -f visits.txt ]; then echo "0" > visits.txt; fi
+          visits=$(cat visits.txt)
+          visits=$((visits + 1))
+          echo $visits > visits.txt
+          echo "::set-output name=visits::$visits"
+
+      - name: Update README.md
+        run: |
+          visits=${{ steps.increment.outputs.visits }}
+          badge="![Visitors](https://img.shields.io/badge/Visitors-$visits-blue?style=social&logo=github)"
+          sed -i 's|!\[Visitors\](https://img.shields.io/badge/Visitors-.*-blue?style=social&logo=github)|'"$badge"'|' README.md
+
+      - name: Commit changes
+        env:
+          GH_PAT: ${{ secrets.VISITOR_PAT }}
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add visits.txt README.md
+          git commit -m 'Update visits count'
+          git push https://x-access-token:${{ secrets.VISITOR_PAT }}@github.com/sudoesjudo/automation.git HEAD:main
