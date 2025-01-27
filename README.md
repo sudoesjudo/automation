@@ -49,10 +49,10 @@ automation/                 # Root folder of project
 
 | admin_tasks     | managed_devices | fetch_configs | push_configs  | interface_congifs |
 |:---------------:|:---------------:|:-------------:|:-------------:|:-----------------:|
-| backup_config   | list_hosts      | vlan_config   | add_ip_addr   | ip_addr           |
-| save_config     | show_version    | get_routes    | add_static_rt | show_up_down      |
-| pull_firmware   | get_heartbeat   | show_bgp      | add_new_vlan  | show_counters     |
-| firmware_update | reload_now      | show_ospf     | add_new_svi   | show_errors       |
+| firmware_update | get_heartbeat   | vlan_config   | add_new_vlan  | show_up_down      |
+| backup_config   | show_version    | get_routes    | add_static_rt | show_counters     |
+| pull_firmware   | reload_now      | show_ospf     | add_ip_addr   | show_erros        |
+| save_config     | list_hosts      | show_bgp      | add_new_svi   | ip_addr           |
 
 
 Old School Visit Counter:
