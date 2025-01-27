@@ -22,29 +22,29 @@ This repository contains Ansible playbooks and roles designed to automate networ
 
 ```plaintext
 automation/                 # Root folder of project
-├── ansible.cfg                  # Ansible configuration file
-├── inventory/                   # Inventory files
+├── ansible.cfg                # Ansible configuration file
+├── inventory/                 # Inventory files
 │   ├── hosts                    # Main inventory file listing devices
 │   └── group_vars/              # Group-specific variables
-├── playbooks/                   # Directory for playbooks
+├── playbooks/                 # Directory for playbooks
 │   ├── site.yml                 # Main playbook
 │   └── deploy.yml               # Playbook for deployment
-├── roles/                       # Directory for roles
+├── roles/                     # Directory for roles
 │   ├── common/                  # Role for common tasks
-│   │   ├── tasks/               # Main tasks file
-│   │   ├── vars/                # Variables specific to the role
-│   │   └── templates/           # Jinja2 templates
+│   │   ├── tasks/                 # Main tasks file
+│   │   ├── vars/                  # Variables specific to the role
+│   │   └── templates/             # Jinja2 templates
 │   └── sites/                 # Role for sites
 │   │   ├── devices/             # Devices inside sites
-│   │   │   ├── routers.yml      # Routers and their configs
-│   │   │   ├── switches.yml     # Switches and their configs
-│   │   │   ├── firewalls.yml    # Firewalls and their configs
-│   │   │   ├── servers.yml      # Servers and their configs
-│   │   │   └── vms.yml          # Virtual Machines and their configs
+│   │   │   ├── routers.yml        # Routers and their configs
+│   │   │   ├── switches.yml       # Switches and their configs
+│   │   │   ├── firewalls.yml      # Firewalls and their configs
+│   │   │   ├── servers.yml        # Servers and their configs
+│   │   │   └── vms.yml            # Virtual Machines and their configs
 │   │   ├── tasks/               # Tasks related to sites
 │   │   ├── vars/                # Variables for sites role
 │   │   └── templates/           # Jinja2 templates for sites role
-└── venv/                        # Python virtual environment folder (optional)
+└── venv/                     # Python virtual environment
 ```
 
 ## Naming Schema and Assignments
