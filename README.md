@@ -1,10 +1,9 @@
 # Ansible Automation Projects 
 ###### This README is still in progress. Updates are being made as time permits
 
-Hello! I'm Aubin 👋 Nice to meet you!
-Welcome to my first public Repository! 
+Hello! I'm Aubin 👋 Nice to meet you! Welcome to my first public Repository. 
 
-Let's build, automate, and make life a bit simpler.<br/>
+Let's build, automate, and make life a bit simpler.
 
 Here, I'll be working on automation scripts and fun networking projects.<br/>
 This repository contains Ansible playbooks and roles designed to automate network configuration changes amongst other repatitive tasks.
