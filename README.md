@@ -9,6 +9,10 @@ Let's build, automate, and make life a bit simpler.<br/>
 Here, I'll be working on automation scripts and fun networking projects.<br/>
 This repository contains Ansible playbooks and roles designed to automate network configuration changes amongst other repatitive tasks.
 
+#### Connect with me on LinkedIn!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/aubinazuriah995?trk=profile-badge)
+
 ## Features:
 - **Playbooks**♻️📘: Automate things that take too much time and could bore the best of us
 - **Role Assignment**☝️✌️🗒️: Modular, reusable Ansible roles                   
@@ -58,6 +62,10 @@ automation/                 # Root folder of project
 Old School Visit Counter:
 
 ![Visitor Count](https://profile-counter.glitch.me/sudoesjudo/count.svg)
+
+
+
+              
 
 
 
