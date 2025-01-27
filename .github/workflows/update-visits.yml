@@ -15,7 +15,9 @@ jobs:
       - name: Increment visit counter
         id: increment
         run: |
+          # Initialize visits.txt if it doesn't exist
           if [ ! -f visits.txt ]; then echo "0" > visits.txt; fi
+          # Read current count and increment
           visits=$(cat visits.txt)
           visits=$((visits + 1))
           echo $visits > visits.txt
@@ -28,9 +30,12 @@ jobs:
           sed -i 's|!\[Visits\](https://img.shields.io/badge/Visits-.*-blue)|'"$badge"'|' README.md
 
       - name: Commit changes
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
+          # Configure git for GitHub Actions
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add visits.txt README.md
           git commit -m 'Update visits count'
-          git push
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/sudoesjudo/automation.git HEAD:main
