@@ -1,16 +1,67 @@
-# Automation Scripts and Networking Projects (This README is still in progress. Updates are being made as time permits)
+# Ansible Automation Projects 
+###### This README is still in progress. Updates are being made as time permits
 
-Welcome to my first public Repository! Let's build and automate... 
-Here, I'll be working on automation scripts and fun networking projects.
+Hello! I'm Aubin 👋 Nice to meet you!
+Welcome to my first public Repository! 
 
-# Ansible Automation Projects
+Let's build, automate, and make life a bit simpler.<br/>
 
+Here, I'll be working on automation scripts and fun networking projects.<br/>
 This repository contains Ansible playbooks and roles designed to automate network configuration changes amongst other repatitive tasks.
 
-## Features
-- **Playbooks**: Automate things that take too much time and could bore the best of us.
-- **Role Assignment**: Modular, reusable Ansible roles:                   
-- **Scalability**: Works for small to large-scale infrastructures.
+## Features:
+- **Playbooks**♻️📘: Automate things that take too much time and could bore the best of us
+- **Role Assignment**☝️✌️🗒️: Modular, reusable Ansible roles                   
+- **Scalability**📈: Works for small to large-scale infrastructures
 
-## Project Structure
-- First Automation Project:
+## Automation Project Directory Structure
+
+```plaintext
+automation/                 # Root folder of project
+├── ansible.cfg                  # Ansible configuration file
+├── inventory/                   # Inventory files
+│   ├── hosts                    # Main inventory file listing devices
+│   └── group_vars/              # Group-specific variables
+├── playbooks/                   # Directory for playbooks
+│   ├── site.yml                 # Main playbook
+│   └── deploy.yml               # Playbook for deployment
+├── roles/                       # Directory for roles
+│   ├── common/                  # Role for common tasks
+│   │   ├── tasks/               # Main tasks file
+│   │   ├── vars/                # Variables specific to the role
+│   │   └── templates/           # Jinja2 templates
+│   └── sites/                 # Role for sites
+│   │   ├── devices/             # Devices inside sites
+│   │   │   ├── routers.yml      # Routers and their configs
+│   │   │   ├── switches.yml     # Switches and their configs
+│   │   │   ├── firewalls.yml    # Firewalls and their configs
+│   │   │   ├── servers.yml      # Servers and their configs
+│   │   │   └── vms.yml          # Virtual Machines and their configs
+│   │   ├── tasks/               # Tasks related to sites
+│   │   ├── vars/                # Variables for sites role
+│   │   └── templates/           # Jinja2 templates for sites role
+└── venv/                        # Python virtual environment folder (optional)
+```
+
+## Naming Schema and Assignments
+###### This will change and update over time 
+  
+
+| admin_tasks     | managed_devices | fetch_configs | push_configs  | interface_congifs |
+|:---------------:|:---------------:|:-------------:|:-------------:|:-----------------:|
+| backup_config   | list_hosts      | vlan_config   | add_ip_addr   | ip_addr           |
+| save_config     | show_version    | get_routes    | add_static_rt | show_up_down      |
+| pull_firmware   | get_heartbeat   | show_bgp      | add_new_vlan  | show_counters     |
+| firmware_update | reload_now      | show_ospf     | add_new_svi   | show_errors       |
+
+
+Old School Visit Counter:
+
+![Visitor Count](https://profile-counter.glitch.me/sudoesjudo/count.svg)
+
+
+
+
+
+
+
