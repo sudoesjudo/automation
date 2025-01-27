@@ -1,4 +1,11 @@
-# Ansible Automation Projects 
+<h1 align="left"> Ansible Automation Projects
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/aubinazuriah995?trk=profile-badge)
+<img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
+<a href="https://github.com/sudoesjudo/automation/stargazers"><img src="https://img.shields.io/github/stars/sudoesjudo/automation" alt="Stars Badge"/></a>
+<a href="https://github.com/sudoesjudo/automation"><img src="https://visitor-badge.laobi.icu/badge?page_id=sudoesjudo.automation" alt="Visitor Badge"/></a>
+
+
 ###### This README is still in progress. Updates are being made as time permits
 
 Hello! I'm Aubin 👋 Nice to meet you! Welcome to my first public Repository. 
@@ -7,10 +14,6 @@ Let's build, automate, and make life a bit simpler.
 
 Here, I'll be working on automation scripts and fun networking projects.<br/>
 This repository contains Ansible playbooks and roles designed to automate network configuration changes amongst other repatitive tasks.
-
-#### Connect with me on LinkedIn!
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/aubinazuriah995?trk=profile-badge)
 
 ## Features:
 - **Playbooks**♻️📘: Automate things that take too much time and could bore the best of us
