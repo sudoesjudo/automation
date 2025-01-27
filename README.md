@@ -3,8 +3,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/aubinazuriah995?trk=profile-badge)
 <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
 <a href="https://github.com/sudoesjudo/automation/stargazers"><img src="https://img.shields.io/github/stars/sudoesjudo/automation" alt="Stars Badge"/></a>
-<a href="https://github.com/sudoesjudo/automation"><img src="https://visitor-badge.laobi.icu/badge?page_id=sudoesjudo.automation" alt="Visitor Badge"/></a>
-
+<a href="https://github.com/sudoesjudo/automation"><img src="https://img.shields.io/badge/Visitors-0-blue?style=social&logo=github" alt="Visitor Badge"/></a>
 
 ###### This README is still in progress. Updates are being made as time permits
 
@@ -59,15 +58,7 @@ automation/                 # Root folder of project
 | backup_config   | show_version    | get_routes    | add_static_rt | show_counters     |
 | pull_firmware   | reload_now      | show_ospf     | add_ip_addr   | show_erros        |
 | save_config     | list_hosts      | show_bgp      | add_new_svi   | ip_addr           |
-
-
-Old School Visit Counter:
-
-![Visitor Count](https://profile-counter.glitch.me/sudoesjudo/count.svg)
-
-
-
-              
+             
 
 
 
