@@ -1,7 +1,7 @@
 <h1 align="left"> Ansible Automation Projects
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/aubinazuriah995?trk=profile-badge)
-![Visits](https://img.shields.io/badge/Visits-21560-blue)
+![Visits](https://img.shields.io/badge/Visits-0-blue)
 <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
 <a href="https://github.com/sudoesjudo/automation/stargazers"><img src="https://img.shields.io/github/stars/sudoesjudo/automation" alt="Stars Badge"/></a>
 
